@@ -1,0 +1,36 @@
+section {
+  max-width: 1440px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 290px;
+  padding-inline: 60px;
+  background-color: #141d2f;
+  span{
+    font-size: 24px;
+  }
+}
+
+.footer-left-side {
+  display: flex;
+  flex-direction: column;
+  img {
+    margin-top: 16px;
+  }
+  a{
+    margin-top: 8px;
+  }
+}
+
+.footer-right-side {
+  display: flex;
+  justify-content: space-between;
+  width: 174px;
+  a {
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
