@@ -1,5 +1,5 @@
 section {
-  max-width: 1440px;
+  max-width: 1920px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -7,6 +7,8 @@ section {
   height: 110px;
   padding-inline: 60px;
   background-color: #141d2f;
+  position: fixed;
+  top: 0;
   div {
     display: flex;
     justify-content: space-between;

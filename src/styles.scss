@@ -2,19 +2,27 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: #141d2f;
   color: #ffffff;
   font-family: 'Poppins';
-}
-
-a {
-  text-decoration: none;
 }
 
 body{
   display: grid;
   place-content: center;
+  background-color: #141d2f;
+  overflow-x: hidden;
 }
+
+button{
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* poppins-100 - latin */
 @font-face {
