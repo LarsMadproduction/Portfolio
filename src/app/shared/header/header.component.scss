@@ -9,6 +9,7 @@ section {
   background-color: #141d2f;
   position: fixed;
   top: 0;
+  z-index: 1000;
   div {
     display: flex;
     justify-content: space-between;

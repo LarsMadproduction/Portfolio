@@ -23,6 +23,19 @@ a {
   cursor: pointer;
 }
 
+.pos-rel{
+  position: relative;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-none{
+  display: none;
+}
 
 /* poppins-100 - latin */
 @font-face {
