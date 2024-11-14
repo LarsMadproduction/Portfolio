@@ -163,16 +163,40 @@ button {
 }
 
 @media (max-width: 1250px) {
-    .atf {
-      background-position-y: 20vh;
+  .atf {
+    background-position-y: 20vh;
+  }
+  .portrait-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .portrait {
+      position: relative;
+      height: 550px;
+      top: 0px;
     }
-    .portrait-container {
-      .portrait {
-        height: 650px;
-        top: 65px;
-      }
-      .portrait-bg {
-        height: 650px;
-      }
+    .portrait-bg {
+      height: 600px;
+      top: 0px;
+      left: unset;
     }
   }
+  .info-container {
+    .headline-order {
+      top: -10vh;
+      right: 0vw;
+      left: 0vw;
+    }
+  }
+  .bottom-order {
+    top: 10vh;
+    z-index: -1;
+  }
+  .social-links {
+    justify-content: unset;
+    gap: 16px;
+  }
+  .email {
+    display: none;
+  }
+}
