@@ -23,12 +23,23 @@ h1 {
   margin-bottom: 40px;
 }
 
+p {
+  position: relative;
+  z-index: 1;
+}
+
 .details-section {
   span {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-top: 24px;
+    img {
+      transition: ease-in-out 125ms;
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
   }
 }
 
@@ -58,4 +69,43 @@ h1 {
   right: -100px;
   border-top: 4px solid #70e61c;
   width: 267px;
+}
+
+@media (max-width: 1400px) {
+  .border-portrait {
+    right: 167px;
+    height: 350px;
+    width: 350px;
+    img {
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .border-portrait {
+    right: 0px;
+  }
+  .green-bar {
+    right: -100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .border-portrait {
+    display: none;
+  }
+  .green-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-inline: 16px;
+  }
+  .bg-purple-blur {
+    right: -500px;
+  }
 }
