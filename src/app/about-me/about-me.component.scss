@@ -1,5 +1,5 @@
 section {
-  padding-top: 110px;
+  padding-block: 110px;
   width: 100vw;
   max-width: 1920px;
   padding-inline: 100px;
@@ -13,15 +13,6 @@ section {
   position: absolute;
   top: -28vh;
   right: -400px;
-}
-
-h1 {
-  font-size: clamp(
-    32px,
-    calc(32px + (90 - 32) * ((100vw - 320px) / (1920 - 320))),
-    90px
-  );
-  margin-bottom: 40px;
 }
 
 p {

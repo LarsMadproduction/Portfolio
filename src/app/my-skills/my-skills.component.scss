@@ -1,0 +1,127 @@
+section {
+  width: 100vw;
+  max-width: 1920px;
+  padding-inline: 100px;
+  padding-block: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.skill-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(
+    16px,
+    calc(16px + (88 - 16) * ((100vw - 320px) / (1920 - 320))),
+    88px
+  );
+  max-width: 685px;
+  span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 169px;
+    &.continually-learning {
+      color: #9747ff;
+      &:hover {
+        color: #ffffff;
+        img {
+          content: url(./../../../public/icons/Continually-Learning-white.png);
+        }
+      }
+    }
+    &:hover img {
+      transform: translateY(-16px);
+    }
+    img {
+      transition: transform 125ms ease-in-out, content 125ms ease-in-out;
+    }
+  }
+}
+
+.headline-content {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  max-width: 470px;
+  h1 {
+    margin-bottom: 24px;
+    line-height: 100%;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+  }
+  button {
+    position: relative;
+    z-index: 1000;
+    height: 58px;
+    width: 200px;
+    background-color: #70e61c;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 5%;
+    box-shadow: 4px 4px 4px 0px #00000040;
+    &:hover {
+      background-color: #9747ff;
+      height: 69px;
+      width: 240px;
+      transition: width 125ms ease-in-out, height 125ms ease-in-out;
+    }
+  }
+}
+
+.purple-bar {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  border-top: 4px solid #9747ff;
+  width: 68px;
+}
+
+h2 {
+  font-size: clamp(
+    24px,
+    calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320))),
+    32px
+  );
+}
+
+.highlight {
+  color: #9747ff;
+}
+
+@media (max-width: 1252px) {
+  section {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 80px;
+  }
+  .skill-stack {
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .skill-stack {
+    gap: unset;
+    span {
+      margin-bottom: 5%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-inline: 16px;
+  }
+  .purple-bar {
+    right: -16px;
+    width: 16px;
+  }
+}

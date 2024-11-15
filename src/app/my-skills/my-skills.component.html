@@ -1,0 +1,38 @@
+<section>
+  <div class="skill-stack">
+    <span
+      *ngFor="let skill of skillStack"
+      [ngClass]="{ 'continually-learning': skill === 'Continually-Learning' }"
+    >
+      <img
+        [src]="
+          skill === 'Continually-Learning'
+            ? 'icons/Continually-Learning.png'
+            : 'icons/' + skill + '.png'
+        "
+        [alt]="skill"
+        [ngClass]="{ 'continually-learning': skill === 'Continually-Learning' }"
+      />
+
+      {{ skill }}
+    </span>
+  </div>
+  <div class="headline-content">
+    <h1 class="pos-rel">
+      My skills
+      <div class="purple-bar"></div>
+    </h1>
+    <div>
+      <p>
+        I have gained experience in building projects with different<br />
+        frontend technologies and concepts.
+      </p>
+      <h2>Looking for<span class="highlight"> another skill</span>?</h2>
+      <p>
+        Feel free to contact me. I look forward to expanding<br />
+        on my previous knowledge.
+      </p>
+      <button>Get in touch</button>
+    </div>
+  </div>
+</section>

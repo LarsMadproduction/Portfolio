@@ -56,11 +56,6 @@
 .headline {
   flex-direction: column;
   h1 {
-    font-size: clamp(
-      32px,
-      calc(32px + (90 - 32) * ((100vw - 320px) / (1920 - 320))),
-      90px
-    );
     line-height: 100%;
     width: 100%;
     margin-bottom: 1%;
