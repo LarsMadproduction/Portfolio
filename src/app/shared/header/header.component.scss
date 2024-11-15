@@ -17,3 +17,12 @@ section {
     font-size: 24px;
   }
 }
+
+@media (max-width: 768px) {
+  a {
+    display: none;
+  }
+  section{
+    padding-inline: 16px;
+  }
+}

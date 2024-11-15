@@ -37,6 +37,22 @@ a {
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141D2F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141D2F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E283D;
+}
+
 /* poppins-100 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

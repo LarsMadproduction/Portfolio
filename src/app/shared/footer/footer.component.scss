@@ -7,7 +7,7 @@ section {
   height: 290px;
   padding-inline: 100px;
   background-color: #141d2f;
-  span{
+  span {
     font-size: 24px;
   }
 }
@@ -18,7 +18,7 @@ section {
   img {
     margin-top: 16px;
   }
-  a{
+  a {
     margin-top: 8px;
   }
 }
@@ -32,5 +32,17 @@ section {
       height: 30px;
       width: 30px;
     }
+  }
+}
+
+@media (max-width: 870px) {
+  section {
+    flex-direction: column;
+    padding-inline: 0px;
+    padding-block: 50px;
+    height: 350px;
+  }
+  .footer-left-side {
+    align-items: center;
   }
 }

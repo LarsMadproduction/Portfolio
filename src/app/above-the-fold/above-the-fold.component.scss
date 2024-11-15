@@ -49,30 +49,31 @@
           64px
         );
       }
-      .headline {
-        flex-direction: column;
-        h1 {
-          font-size: clamp(
-            40px,
-            calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320))),
-            90px
-          );
-          line-height: 100%;
-          width: 100%;
-          margin-bottom: 1%;
-        }
-        h2 {
-          font-size: clamp(
-            24px,
-            calc(24px + (58 - 24) * ((100vw - 320px) / (1920 - 320))),
-            58px
-          );
-          line-height: 100%;
-          font-weight: 200;
-          color: #9747ff;
-        }
-      }
     }
+  }
+}
+
+.headline {
+  flex-direction: column;
+  h1 {
+    font-size: clamp(
+      32px,
+      calc(32px + (90 - 32) * ((100vw - 320px) / (1920 - 320))),
+      90px
+    );
+    line-height: 100%;
+    width: 100%;
+    margin-bottom: 1%;
+  }
+  h2 {
+    font-size: clamp(
+      24px,
+      calc(24px + (58 - 24) * ((100vw - 320px) / (1920 - 320))),
+      58px
+    );
+    line-height: 100%;
+    font-weight: 200;
+    color: #9747ff;
   }
 }
 
@@ -97,18 +98,13 @@ button {
   position: absolute;
   top: 75vh;
   right: 0px;
-  max-width: 1920px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .social-links {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 600px;
+  gap: 16px;
   margin-top: 3%;
   margin-left: 140px;
   font-size: 24px;
@@ -173,7 +169,8 @@ button {
     .portrait {
       position: relative;
       height: 550px;
-      top: 0px;
+      top: 20px;
+      left: 0;
     }
     .portrait-bg {
       height: 600px;
@@ -188,15 +185,57 @@ button {
       left: 0vw;
     }
   }
-  .bottom-order {
-    top: 10vh;
-    z-index: -1;
+  button {
+    height: 55px;
+    width: 120px;
+    font-size: 16px;
   }
-  .social-links {
-    justify-content: unset;
-    gap: 16px;
+  .bottom-order {
+    top: 18vh;
+    z-index: -1;
   }
   .email {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .portrait-container {
+    overflow: hidden;
+  }
+  .social-links {
+    margin-left: 140px;
+  }
+  .scroll-sign {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .atf {
+    background-position-y: 7vh;
+  }
+  .portrait-container {
+    .portrait {
+      position: relative;
+      height: 450px;
+      top: 20px;
+      left: -10px;
+    }
+    .portrait-bg {
+      height: 500px;
+      top: 0px;
+      left: unset;
+    }
+  }
+  .info-container {
+    top: 12vh;
+    .headline-order {
+      div {
+        span {
+          display: none;
+        }
+      }
+    }
   }
 }
