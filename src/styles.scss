@@ -35,6 +35,10 @@ a {
   position: relative;
 }
 
+.bg-filter {
+  filter: brightness(1.25);
+}
+
 .d-flex {
   display: flex;
   justify-content: center;

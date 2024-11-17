@@ -1,0 +1,42 @@
+section {
+  padding-block: 110px;
+  width: 100vw;
+  max-width: 1920px;
+  padding-inline: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: clip;
+}
+
+.bg-purple-blur {
+    position: absolute;
+    bottom: -400px;
+    left: -500px;
+    z-index: -10;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purple-bar {
+  position: absolute;
+  left: 0px;
+  border-top: 4px solid #9747ff;
+  width: 500px;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h2{
+    font-size: 32px;
+    padding-bottom: 32px;
+}

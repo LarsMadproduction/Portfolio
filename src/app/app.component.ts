@@ -6,6 +6,7 @@ import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { PortfolioListComponent } from './portfolio-list/portfolio-list.componen
     AboutMeComponent,
     MySkillsComponent,
     PortfolioListComponent,
+    ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
