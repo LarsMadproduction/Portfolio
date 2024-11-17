@@ -6,9 +6,18 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  overflow-x: clip;
+}
+
+.bg-green-blur {
+  position: absolute;
+  bottom: center;
+  left: -450px;
 }
 
 .skill-stack {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   gap: clamp(

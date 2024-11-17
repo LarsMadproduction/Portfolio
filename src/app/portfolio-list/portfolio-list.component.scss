@@ -8,6 +8,8 @@ section {
 }
 
 .headline {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +27,8 @@ section {
 }
 
 .portfolio-content {
+  position: relative;
+  z-index: 1;
   width: 100vw;
   max-width: 1920px;
   padding-top: 32px;
@@ -35,6 +39,18 @@ section {
   text-align: center;
   flex-direction: column;
   gap: 32px;
+  overflow-x: clip;
+}
+
+.bg-purple-blur {
+  position: absolute;
+  top: center;
+  left: -350px;
+}
+.bg-green-blur {
+  position: absolute;
+  top: center;
+  right: -350px;
 }
 
 @media (max-width: 904px) {
