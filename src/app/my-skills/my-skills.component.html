@@ -5,15 +5,10 @@
       [ngClass]="{ 'continually-learning': skill === 'Continually-Learning' }"
     >
       <img
-        [src]="
-          skill === 'Continually-Learning'
-            ? 'icons/Continually-Learning.png'
-            : 'icons/' + skill + '.png'
-        "
+        [src]="skill === 'Continually-Learning' ? 'icons/Continually-Learning.png' : 'icons/' + skill + '.png'"
         [alt]="skill"
         [ngClass]="{ 'continually-learning': skill === 'Continually-Learning' }"
       />
-
       {{ skill }}
     </span>
   </div>

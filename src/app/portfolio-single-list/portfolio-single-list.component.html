@@ -1,0 +1,19 @@
+<section
+  *ngFor="let project of projects; let i = index"
+  [ngClass]="{ reverse: i % 2 === 1 }"
+>
+  <div>
+    <img src="{{ project.image }}" style="width: 85%" alt="" />
+  </div>
+  <div class="description">
+    <h2>{{ project.name }}</h2>
+    <h3>{{ project.skills }}</h3>
+    <p>
+      {{ project.description }}
+    </p>
+    <div class="btns">
+      <button class="test-btn">Live test</button>
+      <button class="git-btn">Github</button>
+    </div>
+  </div>
+</section>
