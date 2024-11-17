@@ -72,7 +72,10 @@
   }
 }
 
-button {
+.lets-talk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 68px;
   width: 165px;
   background-color: #70e61c;
