@@ -15,7 +15,7 @@ section {
   left: -450px;
 }
 
-.skill-stack {
+.skill-set {
   position: relative;
   z-index: 1;
   display: flex;
@@ -26,12 +26,32 @@ section {
     88px
   );
   max-width: 685px;
+  @keyframes flyInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden;
+    }
+    80% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
   span {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     width: 169px;
+    &.animated {
+      animation: flyInFromLeft 0.8s ease-out forwards;
+      animation-delay: calc(125ms * var(--delay));
+    }
     &.continually-learning {
       color: #9747ff;
       &:hover {

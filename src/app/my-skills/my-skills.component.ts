@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-skills',
@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss',
 })
-export class MySkillsComponent {
-  skillStack = [
+export class MySkillsComponent implements OnInit, AfterViewInit {
+  skillSet = [
     'Angular',
     'TypeScript',
     'JavaScript',
@@ -22,4 +22,30 @@ export class MySkillsComponent {
     'HTML',
     'Continually-Learning',
   ];
+
+  animatedSkills = false;
+
+  ngOnInit() {}
+
+  ngAfterViewInit() {
+    this.observeSkills();
+  }
+
+  observeSkills() {
+    let options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+    let observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          this.animatedSkills = true;
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+    let skillElements = document.querySelectorAll('.skill-stack span');
+    skillElements.forEach((el) => observer.observe(el));
+  }
 }

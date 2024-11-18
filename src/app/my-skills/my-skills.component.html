@@ -1,10 +1,7 @@
-<section id="my_skills"  class="pos-rel">
+<section id="my_skills" class="pos-rel">
   <img class="bg-green-blur bg-filter" src="backgrounds/green-shadow-skills-portfolio.png" alt="">
-  <div class="skill-stack">
-    <span
-      *ngFor="let skill of skillStack"
-      [ngClass]="{ 'continually-learning': skill === 'Continually-Learning' }"
-    >
+  <div class="skill-set">
+    <span *ngFor="let skill of skillSet" [ngClass]="{'animated': animatedSkills}">
       <img
         [src]="skill === 'Continually-Learning' ? 'icons/Continually-Learning.png' : 'icons/' + skill + '.png'"
         [alt]="skill"
