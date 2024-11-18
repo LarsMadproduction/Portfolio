@@ -1,0 +1,29 @@
+<div class="mobile-menu-icon" (click)="toggleMobileNav()">
+  <img
+    [src]="
+      isMobileNavOpen
+        ? 'navigation/mobile-menu-close.png'
+        : 'navigation/mobile-menu.png'
+    "
+    alt="Mobile Menu"
+  />
+</div>
+
+<nav class="mobile-nav" [class.open]="isMobileNavOpen">
+  <div class="mobile-menu-icon" (click)="toggleMobileNav()">
+    <img
+      [src]="
+        isMobileNavOpen
+          ? 'navigation/mobile-menu-close.png'
+          : 'navigation/mobile-menu.png'
+      "
+      alt="Mobile Menu"
+    />
+  </div>
+  <ul>
+    <li><a href="#about_me" (click)="toggleMobileNav()">About me</a></li>
+    <li><a href="#my_skills" (click)="toggleMobileNav()">Skills</a></li>
+    <li><a href="#portfolio" (click)="toggleMobileNav()">Portfolio</a></li>
+    <li><a href="#contact" (click)="toggleMobileNav()">Contact</a></li>
+  </ul>
+</nav>

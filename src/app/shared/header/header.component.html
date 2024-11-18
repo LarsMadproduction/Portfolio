@@ -1,8 +1,19 @@
 <section>
-    <img src="portfolio-logo.png" alt="">
-    <div>
-        <a href="#about_me">About me</a>
-        <a href="#my_skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-    </div>
+  <a href="#"><img src="portfolio-logo.png" alt="" /></a>
+  <div>
+    <a href="#about_me" [class.active]="activeSection === 'about_me'"
+      >About me</a
+    >
+    <a href="#my_skills" [class.active]="activeSection === 'my_skills'"
+      >Skills</a
+    >
+    <a
+      href="#portfolio"
+      [class.active]="
+        activeSection === 'portfolio' || activeSection === 'portfolio_content'
+      "
+      >Portfolio</a
+    >
+  </div>
+  <app-mobile-nav></app-mobile-nav>
 </section>
