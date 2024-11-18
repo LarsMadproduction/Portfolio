@@ -1,1 +1,108 @@
-<p>contact-from works!</p>
+<div class="container">
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <div class="space">
+      <div
+        class="input-wrapper"
+        [ngClass]="{ valid: name.valid, invalid: !name.valid && name.touched }"
+      >
+        <input
+          #name="ngModel"
+          [ngClass]="{
+            'error-border': !name.valid && name.touched,
+            'valid-border': name.valid && name.touched
+          }"
+          [(ngModel)]="contactData.name"
+          type="text"
+          autocomplete="off"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+      </div>
+      <span class="invalid" *ngIf="!name.valid && name.touched"
+        >Your name is required</span
+      >
+    </div>
+    <div class="space">
+      <div
+        class="input-wrapper"
+        [ngClass]="{
+          valid: email.valid,
+          invalid: !email.valid && email.touched
+        }"
+      >
+        <input
+          #email="ngModel"
+          [ngClass]="{
+            'error-border': !email.valid && email.touched,
+            'valid-border': email.valid && email.touched
+          }"
+          [(ngModel)]="contactData.email"
+          type="email"
+          autocomplete="off"
+          name="email"
+          placeholder="Your email"
+          required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        />
+      </div>
+      <span class="invalid" *ngIf="!email.valid && email.touched"
+        >Your email is required</span
+      >
+    </div>
+    <div class="space">
+      <div
+        class="input-wrapper"
+        [ngClass]="{
+          valid: message.valid,
+          invalid: !message.valid && message.touched
+        }"
+      >
+        <textarea
+          #message="ngModel"
+          [ngClass]="{
+            'error-border': !message.valid && message.touched,
+            'valid-border': message.valid && message.touched
+          }"
+          [(ngModel)]="contactData.message"
+          autocomplete="off"
+          name="subject"
+          placeholder="Your message"
+          style="height: 200px"
+          required
+        ></textarea>
+      </div>
+      <span class="invalid" *ngIf="!message.valid && message.touched"
+        >Your message is empty</span
+      >
+    </div>
+    <div class="checkbox space" (click)="toggleCheckbox()">
+      <img
+        [src]="
+          contactData.checkbox
+            ? 'others/check-mark-box.png'
+            : 'others/check-box.png'
+        "
+        alt=""
+        required
+      />
+      <span class="check-policy">
+        I've read the
+        <a href="#"><b class="highlight"> privacy policy </b></a> and agree to
+        the processing of my data as outlined.</span
+      >
+    </div>
+    <span class="invalid" *ngIf="!contactData.checkbox && checkboxTouched"
+      >Please accept the privacy policy.</span
+    >
+
+    <div class="submit-container">
+      <input
+        class="submit-btn"
+        type="submit"
+        value="Send message"
+        [disabled]="!contactForm.valid || !contactData.checkbox"
+      />
+    </div>
+  </form>
+</div>
