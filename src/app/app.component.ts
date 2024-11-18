@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -7,6 +9,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
 import { ContactComponent } from './contact/contact.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 @Component({
   selector: 'app-root',
@@ -19,11 +22,23 @@ import { ContactComponent } from './contact/contact.component';
     AboutMeComponent,
     MySkillsComponent,
     PortfolioListComponent,
-    ContactComponent
+    ContactComponent,
+    LegalNoticeComponent,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
   title = 'portfolio';
+  isLegalNoticeRoute = false;
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.events.subscribe(() => {
+      this.isLegalNoticeRoute = this.router.url === '/legal-notice';
+    });
+  }
 }

@@ -1,4 +1,4 @@
-<div class="mobile-menu-icon" (click)="toggleMobileNav()">
+<div class="mobile-menu-icon" (click)="toggleMobileNav()"  *ngIf="!isLegalNoticeRoute">
   <img
     [src]="
       isMobileNavOpen
