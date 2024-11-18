@@ -1,9 +1,25 @@
 <section id="my_skills" class="pos-rel">
-  <img class="bg-green-blur bg-filter" src="backgrounds/green-shadow-skills-portfolio.png" alt="">
+  <img
+    class="bg-green-blur bg-filter"
+    src="backgrounds/green-shadow-skills-portfolio.png"
+    alt=""
+  />
   <div class="skill-stack">
-    <span *ngFor="let skill of skillStack" [ngClass]="{'animated': animatedSkills}">
+    <span
+      *ngFor="let skill of skillStack"
+      [ngClass]="{
+        animated: animatedSkills,
+        'continually-learning': skill === 'Continually-Learning'
+      }"
+    >
+      <div class="learning"><p>
+        I'm currently learning backend to become a full stack developer</p></div>
       <img
-        [src]="skill === 'Continually-Learning' ? 'icons/Continually-Learning.png' : 'icons/' + skill + '.png'"
+        [src]="
+          skill === 'Continually-Learning'
+            ? 'icons/Continually-Learning.png'
+            : 'icons/' + skill + '.png'
+        "
         [alt]="skill"
         [ngClass]="{ 'continually-learning': skill === 'Continually-Learning' }"
       />

@@ -38,7 +38,7 @@ export class MySkillsComponent implements OnInit, AfterViewInit {
       threshold: 0.5,
     };
     let observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.animatedSkills = true;
           observer.unobserve(entry.target);
