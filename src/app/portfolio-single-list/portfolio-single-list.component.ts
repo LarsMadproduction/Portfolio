@@ -10,18 +10,24 @@ import { Component } from '@angular/core';
 })
 export class PortfolioSingleListComponent {
 
+
+
   projects = [
     {
       image: 'join.png',
       name: 'Join',
       skills: 'Angular | TypeScript | HTML | CSS | Firebase',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      linkProject: 'https://join-335.developerakademie.net/Join/index.html',
+      linkGit: 'https://github.com/LarsMadproduction/Join',
     },
     {
       image: 'medieval-hunt.png',
       name: 'Medieval Hunt',
       skills: 'JavaScript | HTML | CSS',
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help the magician collect the coins and make his way to the end. Watch your mana otherwise it will be difficult to defeat the boss.',
+      linkProject: 'https://lars-schumacher.developerakademie.net/medievalhunt/',
+      linkGit: 'https://github.com/LarsMadproduction/Medieval-Hunt',
     },
   ];
 }
