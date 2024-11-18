@@ -1,15 +1,22 @@
 .legal-notice {
-    height: 100vh;
-    padding-inline: 16px;
-    background-color: rgba(255, 255, 255, 0.452);
-    overflow-y: auto;
+    max-height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    padding-inline: 100px;
+    padding-block: 110px;
   }
   
   .legal-notice-h1 {
-    font-size: 40px;
     text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    margin-bottom: 32px;
   }
 
   .legal-notice-h2 {
-    font-size: 19px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 768px){
+    .legal-notice{
+        padding-inline: 16px;
+    }
   }
