@@ -2,25 +2,21 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-
-
 
 @Component({
   selector: 'app-contact-from',
   standalone: true,
-  imports: [FormsModule, CommonModule, MatCheckboxModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact-from.component.html',
   styleUrl: './contact-from.component.scss',
 })
 export class ContactFromComponent {
-
-  http = inject(HttpClient)
+  http = inject(HttpClient);
   contactData = {
     name: '',
     email: '',
     message: '',
-    checkbox: false
+    checkbox: false,
   };
 
   checkboxTouched = false;
@@ -44,10 +40,10 @@ export class ContactFromComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -56,7 +52,6 @@ export class ContactFromComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
     }
   }

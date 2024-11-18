@@ -11,10 +11,10 @@ section {
 }
 
 .bg-purple-blur {
-    position: absolute;
-    bottom: -400px;
-    left: -500px;
-    z-index: -10;
+  position: absolute;
+  bottom: -400px;
+  left: -500px;
+  z-index: -10;
 }
 
 .headline {
@@ -30,20 +30,32 @@ section {
   width: 500px;
 }
 
-.contact-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    padding-block: 40px;
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-block: 40px;
 }
 
-app-contact-from{
+app-contact-from {
   max-width: 617px;
   width: 100%;
 }
 
-h2{
-    font-size: 32px;
-    padding-bottom: 32px;
+h2 {
+  font-size: 32px;
+  padding-bottom: 32px;
 }
+
+.back-to-top {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  content: url(./../../../public/navigation/white-arrow.png);
+
+  &:hover {
+    content: url(./../../../public/navigation/green-arrow.png);
+  }
+}
+
