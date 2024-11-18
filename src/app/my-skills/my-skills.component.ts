@@ -9,7 +9,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
   styleUrl: './my-skills.component.scss',
 })
 export class MySkillsComponent implements OnInit, AfterViewInit {
-  skillSet = [
+  skillStack = [
     'Angular',
     'TypeScript',
     'JavaScript',
