@@ -67,7 +67,7 @@ section {
     .learning {
       display: none;
       position: absolute;
-      top: -220%;
+      top: -250%;
       left: 0;
       padding: 32px;
       background-color: #141d2f;
@@ -107,7 +107,11 @@ section {
     align-items: flex-end;
     gap: 24px;
   }
-  button {
+  a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 58px;
     width: 200px;

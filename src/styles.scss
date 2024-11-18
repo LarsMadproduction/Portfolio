@@ -18,11 +18,7 @@ body.no-scroll {
 }
 
 h1 {
-  font-size: clamp(
-    32px,
-    calc(32px + (90 - 32) * ((100vw - 320px) / (1920 - 320))),
-    90px
-  );
+  font-size: clamp(32px, calc(32px + (90 - 32) * ((100vw - 320px) / (1920 - 320))), 90px);
 }
 
 button {
