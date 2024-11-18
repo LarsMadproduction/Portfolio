@@ -133,11 +133,26 @@
   position: absolute;
   right: 65px;
   bottom: -65px;
+
   span {
     font-size: 24px;
     line-height: 24px;
     display: inline-block;
     transform: rotate(0.25turn);
+  }
+
+  img {
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
   }
 }
 
