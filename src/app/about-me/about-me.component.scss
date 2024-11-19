@@ -7,6 +7,7 @@ section {
   justify-content: space-between;
   align-items: center;
   overflow-x: clip;
+  background-color: #141d2f;
 }
 
 .bg-purple-blur {
@@ -52,7 +53,10 @@ p {
   align-items: center;
   overflow: hidden;
   img {
-    height: 453px;
+    position: relative;
+    height: 1200px;
+    top: 250px;
+    left: 20px;
   }
 }
 
@@ -69,7 +73,7 @@ p {
     height: 350px;
     width: 350px;
     img {
-      height: 350px;
+      height: 1050px;
     }
   }
 }

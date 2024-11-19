@@ -22,16 +22,19 @@ section {
   a {
     position: relative;
     margin-top: 8px;
-    &:hover {
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 40%;
-        height: 2px;
-        background-color: #70e61c;
-      }
+  }
+}
+
+.legal-notice {
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 40%;
+      height: 2px;
+      background-color: #70e61c;
     }
   }
 }
