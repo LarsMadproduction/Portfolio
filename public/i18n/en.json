@@ -21,5 +21,15 @@
   "puzzle-line3": "problem-solving. I take pride in my ability to",
   "puzzle-line4": "distill complex technical challenges into simple,",
   "puzzle-line5": "user-friendly solutions. This way, I help you",
-  "puzzle-line6": "achieve your goals and bring your visions to life."
+  "puzzle-line6": "achieve your goals and bring your visions to life.",
+  "learning": "I'm currently learning backend to become a full stack developer",
+  "my_skills": "My skills",
+  "skills_intro_line1": "I have gained experience in building projects with different",
+  "skills_intro_line2": "frontend technologies and concepts.",
+  "looking_for": "Looking for",
+  "another_skill": "another skill",
+  "learn_more_line1": "Feel free to contact me. I look forward to expanding",
+  "learn_more_line2": "on my previous knowledge.",
+  "get_in_touch": "Get in touch"
+
 }

@@ -96,7 +96,7 @@ section {
   display: flex;
   flex-direction: column;
   text-align: end;
-  max-width: 470px;
+  max-width: 550px;
   h1 {
     margin-bottom: 24px;
     line-height: 100%;
@@ -138,6 +138,7 @@ section {
 }
 
 h2 {
+  max-width: 380px;
   font-size: clamp(
     24px,
     calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320))),

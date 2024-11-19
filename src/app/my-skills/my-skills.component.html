@@ -13,7 +13,7 @@
       }"
     >
       <div class="learning"><p>
-        I'm currently learning backend to become a full stack developer</p></div>
+        {{ "learning" | translate }}</p></div>
       <img
         [src]="
           skill === 'Continually-Learning'
@@ -28,20 +28,20 @@
   </div>
   <div class="headline-content">
     <h1 class="pos-rel">
-      My skills
+      {{ "my_skills" | translate }}
       <div class="purple-bar"></div>
     </h1>
     <div>
       <p>
-        I have gained experience in building projects with different<br />
-        frontend technologies and concepts.
+        {{ "skills_intro_line1" | translate }}<br />
+        {{ "skills_intro_line2" | translate }}
       </p>
-      <h2>Looking for<span class="highlight"> another skill</span>?</h2>
+      <h2>{{ "looking_for" | translate }}<span class="highlight"> {{ "another_skill" | translate }}</span>?</h2>
       <p>
-        Feel free to contact me. I look forward to expanding<br />
-        on my previous knowledge.
+        {{ "learn_more_line1" | translate }}<br />
+        {{ "learn_more_line2" | translate }}
       </p>
-      <a href="#contact">Get in touch</a>
+      <a href="#contact">{{ "get_in_touch" | translate }}</a>
     </div>
   </div>
 </section>
