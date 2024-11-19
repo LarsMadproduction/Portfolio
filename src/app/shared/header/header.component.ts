@@ -2,17 +2,23 @@ import { Component, HostListener } from '@angular/core';
 import { MobileNavComponent } from '../mobile-nav/mobile-nav.component';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MobileNavComponent, CommonModule],
+  imports: [MobileNavComponent, CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  currentLang: string;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {
+    this.currentLang = this.translate.currentLang || 'en';
+  }
   activeSection: string = '';
 
   isLegalNoticeRoute = false;
@@ -34,5 +40,10 @@ export class HeaderComponent {
     this.router.events.subscribe(() => {
       this.isLegalNoticeRoute = this.router.url === '/legal-notice';
     });
+  }
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+    this.currentLang = lang;
   }
 }

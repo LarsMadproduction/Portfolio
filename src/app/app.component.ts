@@ -10,6 +10,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -24,19 +25,20 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
     PortfolioListComponent,
     ContactComponent,
     LegalNoticeComponent,
-    CommonModule
+    CommonModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-
 export class AppComponent implements OnInit {
   title = 'portfolio';
   isLegalNoticeRoute = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {}
 
   ngOnInit(): void {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
     this.router.events.subscribe(() => {
       this.isLegalNoticeRoute = this.router.url === '/legal-notice';
     });
