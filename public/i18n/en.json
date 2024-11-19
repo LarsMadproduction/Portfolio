@@ -2,5 +2,21 @@
   "about_me": "About me",
   "skills": "Skills",
   "contact": "Contact",
-  "legal_notice": "Legal Notice"
+  "legal_notice": "Legal Notice",
+  "intro-line1": "Hi, I’m a german speaking Frontend Developer based near",
+  "intro-line2": "Mönchengladbach. Motivated by the limitless opportunities",
+  "intro-line3": "within IT, I am excited about crafting visually captivating",
+  "intro-line4": "and intuitive websites and applications.",
+  "location-line1": "Flexible in terms of working environments, I can",
+  "location-line2": "work effectively both on-site in",
+  "location-line3": "Mönchengladbach and remotely.",
+  "bulb-line1": "I am open-minded and always looking for",
+  "bulb-line2": "personal challenges to constantly improve",
+  "bulb-line3": "my knowledge and skills.",
+  "puzzle-line1": "In my profession, programming isn't just about",
+  "puzzle-line2": "writing code; it's a creative form of",
+  "puzzle-line3": "problem-solving. I take pride in my ability to",
+  "puzzle-line4": "distill complex technical challenges into simple,",
+  "puzzle-line5": "user-friendly solutions. This way, I help you",
+  "puzzle-line6": "achieve your goals and bring your visions to life."
 }
