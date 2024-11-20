@@ -15,13 +15,13 @@
           type="text"
           autocomplete="off"
           name="name"
-          placeholder="Your name"
+          [placeholder]="'contact_form_name' | translate"
           required
         />
       </div>
-      <span class="invalid" *ngIf="!name.valid && name.touched"
-        >Your name is required</span
-      >
+      <span class="invalid" *ngIf="!name.valid && name.touched">{{
+        "contact_form_name_required" | translate
+      }}</span>
     </div>
     <div class="space">
       <div
@@ -41,14 +41,14 @@
           type="email"
           autocomplete="off"
           name="email"
-          placeholder="Your email"
+          [placeholder]="'contact_form_email' | translate"
           required
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
       </div>
-      <span class="invalid" *ngIf="!email.valid && email.touched"
-        >Your email is required</span
-      >
+      <span class="invalid" *ngIf="!email.valid && email.touched">{{
+        "contact_form_email_required" | translate
+      }}</span>
     </div>
     <div class="space">
       <div
@@ -67,14 +67,14 @@
           [(ngModel)]="contactData.message"
           autocomplete="off"
           name="subject"
-          placeholder="Your message"
+          [placeholder]="'contact_form_message' | translate"
           style="height: 200px"
           required
         ></textarea>
       </div>
-      <span class="invalid" *ngIf="!message.valid && message.touched"
-        >Your message is empty</span
-      >
+      <span class="invalid" *ngIf="!message.valid && message.touched">{{
+        "contact_form_message_required" | translate
+      }}</span>
     </div>
     <div class="checkbox space" (click)="toggleCheckbox()">
       <img
@@ -87,20 +87,22 @@
         required
       />
       <span class="check-policy">
-        I've read the
-        <a href="#" target="_blank"><b class="highlight"> privacy policy </b></a> and agree to
-        the processing of my data as outlined.</span
+        {{ "privacy_policy_before" | translate }}
+        <a href="#" target="_blank"
+          ><b class="highlight"> {{ "privacy_policy" | translate }}</b></a
+        >
+        {{ "privacy_policy_after" | translate }}</span
       >
     </div>
     <span class="invalid" *ngIf="!contactData.checkbox && checkboxTouched"
-      >Please accept the privacy policy.</span
+      >{{ "privacy_policy_required" | translate }}</span
     >
 
     <div class="submit-container">
       <input
         class="submit-btn"
         type="submit"
-        value="Send message"
+        [value]="'submit_btn' | translate"
         [disabled]="!contactForm.valid || !contactData.checkbox"
       />
     </div>

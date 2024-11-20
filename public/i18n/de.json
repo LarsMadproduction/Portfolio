@@ -45,5 +45,16 @@
   "contact_me_line2": "darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und",
   "contact_me_line3": "mit meiner Arbeit zu Ihren Projekten beizutragen.",
   "contact_me_line4": "Sie suchen einen Frontend-Entwickler?",
-  "contact_me": "Kontaktieren Sie mich!"
+  "contact_me": "Kontaktieren Sie mich!",
+  "contact_form_name": "Ihr Name",
+  "contact_form_name_required": "Ihr Name ist erforderlich!",
+  "contact_form_email": "Ihre E-Mail-Adresse",
+  "contact_form_email_required": "Ihre E-Mail-Adresse ist erforderlich!",
+  "contact_form_message": "Ihre Nachricht",
+  "contact_form_message_required": "Ihre Nachricht ist leer!",
+  "privacy_policy_before": "Ich habe die",
+  "privacy_policy": "Datenschutzerklärung",
+  "privacy_policy_after": "gelesen und stimme der Verarbeitung meiner Daten gemäß den darin beschriebenen Bedingungen zu.",
+  "privacy_policy_required": "Bitte stimmen Sie der Datenschutzerklärung zu!",
+  "submit_btn": "Nachricht senden"
 }

@@ -45,6 +45,16 @@
   "contact_me_line2": "from you, knowing your ideas and contributing to your",
   "contact_me_line3": "projects with my work.",
   "contact_me_line4": "Need a Frontend developer?",
-  "contact_me": "Contact me!"
-
+  "contact_me": "Contact me!",
+  "contact_form_name": "Your name",
+  "contact_form_name_required": "Your name is required!",
+  "contact_form_email": "Your email",
+  "contact_form_email_required": "Your email is required!",
+  "contact_form_message": "Your message",
+  "contact_form_message_required": "Your message is empty!",
+  "privacy_policy_before": "I've read the",
+  "privacy_policy": "privacy policy",
+  "privacy_policy_after": "and agree to the processing of my data as outlined.",
+  "privacy_policy_required": "Please accept the privacy policy!",
+  "submit_btn": "Send message"
 }
