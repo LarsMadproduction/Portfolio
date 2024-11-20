@@ -17,6 +17,7 @@ export class MobileNavComponent {
   activeSection: string = '';
 
   isLegalNoticeRoute = false;
+  isPrivacyPolicyRoute = false;
 
   isMobileNavOpen: boolean = false;
 
@@ -45,6 +46,7 @@ export class MobileNavComponent {
   ngOnInit(): void {
     this.router.events.subscribe(() => {
       this.isLegalNoticeRoute = this.router.url === '/legal-notice';
+      this.isPrivacyPolicyRoute = this.router.url === '/privacy-policy';
     });
   }
 }
