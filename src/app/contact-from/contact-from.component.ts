@@ -21,7 +21,6 @@ export class ContactFromComponent {
   };
 
   checkboxTouched = false;
-  mailTest = true;
   messageSent: boolean = false;
 
   toggleCheckbox() {
@@ -41,14 +40,17 @@ export class ContactFromComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            setTimeout(() => {
             this.messageSent = true;
-          }, 1500);
+            setTimeout(() => {
+              this.messageSent = false;
+            }, 1500);
+            this.contactData.checkbox = false;
+            this.checkboxTouched = false;
             ngForm.resetForm();
           },
           error: (error) => {
@@ -56,8 +58,6 @@ export class ContactFromComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
     }
   }
 }

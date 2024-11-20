@@ -125,6 +125,7 @@ textarea:-webkit-autofill:focus {
   background-color: #70e61c;
   transition: ease-in-out 125ms;
   box-shadow: 4px 4px 4px 0px #00000040;
+  cursor: pointer;
 }
 
 .submit-btn:hover {
