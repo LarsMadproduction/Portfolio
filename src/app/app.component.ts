@@ -11,6 +11,7 @@ import { PortfolioListComponent } from './portfolio-list/portfolio-list.componen
 import { ContactComponent } from './contact/contact.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { TranslateService } from '@ngx-translate/core';
+import { PrivacyPoliceComponent } from './privacy-police/privacy-police.component';
 
 @Component({
   selector: 'app-root',
@@ -26,6 +27,7 @@ import { TranslateService } from '@ngx-translate/core';
     ContactComponent,
     LegalNoticeComponent,
     CommonModule,
+    PrivacyPoliceComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -33,6 +35,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent implements OnInit {
   title = 'portfolio';
   isLegalNoticeRoute = false;
+  isPrivacyPolicyRoute = false;
 
   constructor(private router: Router, private translate: TranslateService) {}
 
@@ -40,7 +43,8 @@ export class AppComponent implements OnInit {
     this.translate.setDefaultLang('en');
     this.translate.use('en');
     this.router.events.subscribe(() => {
-      this.isLegalNoticeRoute = this.router.url === '/legal-notice';
+    this.isLegalNoticeRoute = this.router.url === '/legal-notice';
+    this.isPrivacyPolicyRoute = this.router.url === '/privacy-policy';
     });
   }
 }

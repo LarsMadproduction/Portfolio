@@ -19,7 +19,7 @@ export class PortfolioSingleListComponent {
       name: 'Join',
       skills: 'Angular | TypeScript | HTML | CSS | Firebase',
       descriptionKey: 'portfolio.join.description',
-      linkProject: 'https://join-335.developerakademie.net/Join/index.html',
+      linkProject: 'https://join.lars-schumacher.com',
       linkGit: 'https://github.com/LarsMadproduction/Join',
     },
     {
@@ -27,7 +27,7 @@ export class PortfolioSingleListComponent {
       name: 'Medieval Hunt',
       skills: 'JavaScript | HTML | CSS',
       descriptionKey: 'portfolio.medieval_hunt.description',
-      linkProject: 'https://lars-schumacher.developerakademie.net/medievalhunt/',
+      linkProject: 'https://medieval-hunt.lars-schumacher.com',
       linkGit: 'https://github.com/LarsMadproduction/Medieval-Hunt',
     },
   ];

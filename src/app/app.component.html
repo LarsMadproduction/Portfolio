@@ -1,14 +1,17 @@
 <app-header></app-header>
-<ng-container *ngIf="!isLegalNoticeRoute">
-<router-outlet>
-  <app-above-the-fold></app-above-the-fold>
-  <app-about-me></app-about-me>
-  <app-my-skills></app-my-skills>
-  <app-portfolio-list></app-portfolio-list>
-  <app-contact></app-contact>
-</router-outlet>
+<ng-container *ngIf="!isLegalNoticeRoute && !isPrivacyPolicyRoute">
+  <router-outlet>
+    <app-above-the-fold></app-above-the-fold>
+    <app-about-me></app-about-me>
+    <app-my-skills></app-my-skills>
+    <app-portfolio-list></app-portfolio-list>
+    <app-contact></app-contact>
+  </router-outlet>
 </ng-container>
 <ng-container *ngIf="isLegalNoticeRoute">
-<app-legal-notice></app-legal-notice>
+  <app-legal-notice></app-legal-notice>
+</ng-container>
+<ng-container *ngIf="isPrivacyPolicyRoute">
+  <app-privacy-police></app-privacy-police>
 </ng-container>
 <app-footer></app-footer>

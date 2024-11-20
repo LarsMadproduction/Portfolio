@@ -1,0 +1,26 @@
+section {
+  max-height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  padding-inline: 100px;
+  padding-block: 110px;
+}
+h1 {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-inline: 16px;
+  }
+}
+
+@media (max-width: 470px) {
+    h1 {
+        font-size: 24px !important;
+      }
+  }
