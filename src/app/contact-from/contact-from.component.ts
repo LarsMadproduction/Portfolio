@@ -22,6 +22,7 @@ export class ContactFromComponent {
 
   checkboxTouched = false;
   mailTest = true;
+  messageSent: boolean = false;
 
   toggleCheckbox() {
     this.contactData.checkbox = !this.contactData.checkbox;
@@ -29,7 +30,7 @@ export class ContactFromComponent {
   }
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://lars-schumacher.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -45,6 +46,9 @@ export class ContactFromComponent {
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            setTimeout(() => {
+            this.messageSent = true;
+          }, 1500);
             ngForm.resetForm();
           },
           error: (error) => {
