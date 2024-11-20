@@ -56,5 +56,6 @@
   "privacy_policy": "privacy policy",
   "privacy_policy_after": "and agree to the processing of my data as outlined.",
   "privacy_policy_required": "Please accept the privacy policy!",
-  "submit_btn": "Send message"
+  "submit_btn": "Send message",
+  "message_response": "Message sent successfully."
 }

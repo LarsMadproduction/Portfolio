@@ -56,5 +56,6 @@
   "privacy_policy": "Datenschutzerklärung",
   "privacy_policy_after": "gelesen und stimme der Verarbeitung meiner Daten gemäß den darin beschriebenen Bedingungen zu.",
   "privacy_policy_required": "Bitte stimmen Sie der Datenschutzerklärung zu!",
-  "submit_btn": "Nachricht senden"
+  "submit_btn": "Nachricht senden",
+  "message_response": "Nachricht erfolgreich versendet."
 }
