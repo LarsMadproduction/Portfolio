@@ -24,3 +24,11 @@ h2 {
         font-size: 24px !important;
       }
   }
+
+  @media (min-width: 1921px) {
+    .privacy-policy {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }

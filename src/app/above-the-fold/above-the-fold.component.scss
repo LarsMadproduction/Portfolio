@@ -1,11 +1,11 @@
 .atf {
-  height: 100vh;
+  height: calc(100vh - 110px);
   width: 100vw;
   max-width: 1920px;
   background-image: url(./../../../public/backgrounds/hero-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 180px;
+  background-position-y: 100px;
 }
 
 .portrait-container {
@@ -96,7 +96,7 @@
   width: 100vw;
   max-width: 1920px;
   position: absolute;
-  top: 75vh;
+  top: 70vh;
   right: 0px;
 }
 
@@ -176,7 +176,7 @@
 
 @media (max-width: 1250px) {
   .atf {
-    background-position-y: 20vh;
+    background-position-y: 0vh;
   }
   .portrait-container {
     display: flex;
@@ -207,7 +207,7 @@
     font-size: 16px;
   }
   .bottom-order {
-    top: 0vh;
+    top: -7vh;
     z-index: -1;
   }
   .email {
@@ -219,6 +219,11 @@
   .portrait-container {
     overflow: hidden;
   }
+  .lets-talk {
+    height: 48px;
+    width: 120px;
+    font-size: 16px;
+  }
   .social-links {
     margin-left: 140px;
   }
@@ -229,7 +234,7 @@
 
 @media (max-width: 480px) {
   .atf {
-    background-position-y: 7vh;
+    background-position-y: 0vh;
   }
   .portrait-container {
     .portrait {
@@ -245,7 +250,7 @@
     }
   }
   .info-container {
-    top: 12vh;
+    top: 20vh;
     .headline-order {
       div {
         span {
@@ -253,5 +258,19 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 1921px) {
+  .atf {
+    height: 100vh;
+    width: 100vw;
+    max-width: unset;
+    background-image: url(./../../../public/backgrounds/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 180px;
+    display: flex;
+    justify-content: center;
   }
 }

@@ -1,21 +1,29 @@
 .legal-notice {
-    max-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  padding-inline: 100px;
+  padding-block: 110px;
+}
+
+.legal-notice-h1 {
+  margin-bottom: 32px;
+}
+
+.legal-notice-h2 {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .legal-notice {
+    padding-inline: 16px;
+  }
+}
+
+@media (min-width: 1921px) {
+  section {
     width: 100%;
-    max-width: 1920px;
-    padding-inline: 100px;
-    padding-block: 110px;
+    display: flex;
+    justify-content: center;
   }
-  
-  .legal-notice-h1 {
-    margin-bottom: 32px;
-  }
-
-  .legal-notice-h2 {
-    font-size: 24px;
-  }
-
-  @media (max-width: 768px){
-    .legal-notice{
-        padding-inline: 16px;
-    }
-  }
+}

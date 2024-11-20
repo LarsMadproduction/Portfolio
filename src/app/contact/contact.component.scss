@@ -113,3 +113,24 @@ h2 {
     width: 50px;
   }
 }
+
+@media (min-width: 1921px) {
+  section {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 100px;
+    background-color: #141d2f;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-block: 110px;
+    overflow-x: unset;
+    overflow-y: clip;
+  }
+  .bg-purple-blur {
+    left: calc(0px - max(0px, (100vw - 1920px) / 2));
+  }
+}

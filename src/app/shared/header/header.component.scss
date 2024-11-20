@@ -1,3 +1,14 @@
+.bg-color{
+  background-color: #141d2f;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
 section {
   max-width: 1920px;
   width: 100vw;
@@ -80,5 +91,21 @@ section {
 @media (min-width: 769px) {
   app-mobile-nav {
     display: none;
+  }
+}
+
+@media (min-width: 1921px) {
+  section {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding-inline: 100px;
+    background-color: #141d2f;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
   }
 }

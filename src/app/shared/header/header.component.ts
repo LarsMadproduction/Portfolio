@@ -21,9 +21,6 @@ export class HeaderComponent {
   }
   activeSection: string = '';
 
-  isLegalNoticeRoute = false;
-  isPrivacyPolicyRoute = false;
-
   @HostListener('window:scroll', [])
   onScroll(): void {
     let sections = document.querySelectorAll('section');
@@ -34,13 +31,6 @@ export class HeaderComponent {
       if (scrollY >= offsetTop && scrollY <= offsetBottom) {
         this.activeSection = section.getAttribute('id') || '';
       }
-    });
-  }
-
-  ngOnInit(): void {
-    this.router.events.subscribe(() => {
-      this.isLegalNoticeRoute = this.router.url === '/legal-notice';
-      this.isPrivacyPolicyRoute = this.router.url === '/privacy-policy';
     });
   }
 

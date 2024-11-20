@@ -1,36 +1,44 @@
-<section>
-  <a href="#"><img src="portfolio-logo.png" alt="" /></a>
+<div class="bg-color">
+  <section>
+    <a href="#"><img src="portfolio-logo.png" alt="" /></a>
 
-  <div class="language-switch">
-    <button (click)="switchLanguage('de')" [class.active]="currentLang === 'de'">
-      DE
-    </button>
-    <button (click)="switchLanguage('en')" [class.active]="currentLang === 'en'">
-      EN
-    </button>
-  </div>
+    <div class="language-switch">
+      <button
+        (click)="switchLanguage('de')"
+        [class.active]="currentLang === 'de'"
+      >
+        DE
+      </button>
+      <button
+        (click)="switchLanguage('en')"
+        [class.active]="currentLang === 'en'"
+      >
+        EN
+      </button>
+    </div>
 
-  <div *ngIf="!isLegalNoticeRoute && !isPrivacyPolicyRoute">
-    <a
-      class="desktop-nav"
-      href="#about_me"
-      [class.active]="activeSection === 'about_me'"
-      >{{ 'about_me' | translate }}</a
-    >
-    <a
-      class="desktop-nav"
-      href="#my_skills"
-      [class.active]="activeSection === 'my_skills'"
-      >{{ 'skills' | translate }}</a
-    >
-    <a
-      class="desktop-nav"
-      href="#portfolio"
-      [class.active]="
-        activeSection === 'portfolio' || activeSection === 'portfolio_content'
-      "
-      >Portfolio</a
-    >
-  </div>
-  <app-mobile-nav></app-mobile-nav>
-</section>
+    <div>
+      <a
+        class="desktop-nav"
+        href="#about_me"
+        [class.active]="activeSection === 'about_me'"
+        >{{ "about_me" | translate }}</a
+      >
+      <a
+        class="desktop-nav"
+        href="#my_skills"
+        [class.active]="activeSection === 'my_skills'"
+        >{{ "skills" | translate }}</a
+      >
+      <a
+        class="desktop-nav"
+        href="#portfolio"
+        [class.active]="
+          activeSection === 'portfolio' || activeSection === 'portfolio_content'
+        "
+        >Portfolio</a
+      >
+    </div>
+    <app-mobile-nav></app-mobile-nav>
+  </section>
+</div>

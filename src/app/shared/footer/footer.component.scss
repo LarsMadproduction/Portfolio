@@ -1,13 +1,21 @@
+.bg-color{
+  background-color: #141d2f;
+  width: 100vw;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 4px solid #70e61c;
+}
+
 section {
   max-width: 1920px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 290px;
+  height: 250px;
   padding-inline: 100px;
-  background-color: #141d2f;
-  border-top: 4px solid #70e61c;
   span {
     font-size: 24px;
   }
@@ -63,5 +71,17 @@ section {
   }
   .footer-left-side {
     align-items: center;
+  }
+}
+
+@media (min-width: 1921px) {
+  section {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    padding-inline: 100px;
   }
 }

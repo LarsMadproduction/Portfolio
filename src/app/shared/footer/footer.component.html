@@ -1,20 +1,27 @@
-<section>
-  <div class="footer-left-side">
-    <a href="#"><img src="portfolio-logo.png" alt="" /></a>
-    <a *ngIf="!isLegalNoticeRoute" class="legal-notice" href="/legal-notice">{{ 'legal_notice' | translate }}</a>
-  </div>
-  <span>© Lars Schumacher 2024</span>
-  <div class="footer-right-side">
-    <a href="https://github.com/LarsMadproduction" target="_blank"
-      ><img src="logos/git-hub-btn.png" alt=""
-    /></a>
-    <a href="mailto:schumacher90lars@gmail.com"
-      ><img src="logos/email-btn.png" alt=""
-    /></a>
-    <a
-      href="https://www.linkedin.com/in/lars-schumacher-680948276/"
-      target="_blank"
-      ><img src="logos/linkedin-btn.png" alt=""
-    /></a>
-  </div>
-</section>
+<div class="bg-color">
+  <section>
+    <div class="footer-left-side">
+      <a href="#"><img src="portfolio-logo.png" alt="" /></a>
+      <a
+        *ngIf="!isLegalNoticeRoute"
+        class="legal-notice"
+        href="/legal-notice"
+        >{{ "legal_notice" | translate }}</a
+      >
+    </div>
+    <span>© Lars Schumacher 2024</span>
+    <div class="footer-right-side">
+      <a href="https://github.com/LarsMadproduction" target="_blank"
+        ><img src="logos/git-hub-btn.png" alt=""
+      /></a>
+      <a href="mailto:schumacher90lars@gmail.com"
+        ><img src="logos/email-btn.png" alt=""
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/lars-schumacher-680948276/"
+        target="_blank"
+        ><img src="logos/linkedin-btn.png" alt=""
+      /></a>
+    </div>
+  </section>
+</div>
