@@ -39,5 +39,11 @@
     "medieval_hunt": {
       "description": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf dem Magier, die Münzen zu sammeln und seinen Weg zum Ziel zu finden. Achte auf dein Mana, sonst wird es schwierig, den Boss zu besiegen."
     }
-  }
+  },
+  "contact_h2": "Haben Sie ein Problem, das gelöst werden muss?",
+  "contact_me_line1": "Kontaktieren Sie mich über dieses Formular. Ich freue mich ",
+  "contact_me_line2": "darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und",
+  "contact_me_line3": "mit meiner Arbeit zu Ihren Projekten beizutragen.",
+  "contact_me_line4": "Sie suchen einen Frontend-Entwickler?",
+  "contact_me": "Kontaktieren Sie mich!"
 }
