@@ -21,9 +21,9 @@
     />
   </div>
   <ul>
-    <li><a href="#about_me" (click)="toggleMobileNav()">{{ 'about_me' | translate }}</a></li>
-    <li><a href="#my_skills" (click)="toggleMobileNav()">{{ 'skills' | translate }}</a></li>
-    <li><a href="#portfolio" (click)="toggleMobileNav()">Portfolio</a></li>
-    <li><a href="#contact" (click)="toggleMobileNav()">{{ 'contact' | translate }}</a></li>
+    <li><a [class.active]="activeSection === 'about_me'" href="#about_me" (click)="toggleMobileNav()">{{ 'about_me' | translate }}</a></li>
+    <li><a [class.active]="activeSection === 'my_skills'" href="#my_skills" (click)="toggleMobileNav()">{{ 'skills' | translate }}</a></li>
+    <li><a [class.active]="activeSection === 'portfolio' || activeSection === 'portfolio_content'" href="#portfolio" (click)="toggleMobileNav()">Portfolio</a></li>
+    <li><a [class.active]="activeSection === 'contact'" href="#contact" (click)="toggleMobileNav()">{{ 'contact' | translate }}</a></li>
   </ul>
 </nav>

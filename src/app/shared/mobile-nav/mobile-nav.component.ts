@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -14,6 +14,8 @@ export class MobileNavComponent {
 
   constructor(private router: Router) {}
 
+  activeSection: string = '';
+
   isLegalNoticeRoute = false;
 
   isMobileNavOpen: boolean = false;
@@ -25,6 +27,19 @@ export class MobileNavComponent {
     } else {
       document.body.classList.remove('no-scroll');
     }
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    let sections = document.querySelectorAll('section');
+    let scrollY = window.scrollY + window.innerHeight / 2;
+    sections.forEach((section: Element) => {
+      let offsetTop = section.getBoundingClientRect().top + window.scrollY;
+      let offsetBottom = offsetTop + section.clientHeight;
+      if (scrollY >= offsetTop && scrollY <= offsetBottom) {
+        this.activeSection = section.getAttribute('id') || '';
+      }
+    });
   }
 
   ngOnInit(): void {
