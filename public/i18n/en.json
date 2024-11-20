@@ -30,6 +30,14 @@
   "another_skill": "another skill",
   "learn_more_line1": "Feel free to contact me. I look forward to expanding",
   "learn_more_line2": "on my previous knowledge.",
-  "get_in_touch": "Get in touch"
-
+  "get_in_touch": "Get in touch",
+  "portfolio_explore": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+  "portfolio": {
+    "join": {
+      "description": "A Kanban-inspired task manager. Create and organize tasks using drag-and-drop functions, assign users and categories."
+    },
+    "medieval_hunt": {
+      "description": "A simple Jump-and-Run game based on an object-oriented approach. Help the magician collect the coins and make his way to the end. Watch your mana otherwise it will be difficult to defeat the boss."
+    }
+  }
 }

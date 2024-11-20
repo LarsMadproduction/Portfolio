@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio-single-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './portfolio-single-list.component.html',
   styleUrl: './portfolio-single-list.component.scss',
 })
@@ -17,7 +18,7 @@ export class PortfolioSingleListComponent {
       image: 'join.png',
       name: 'Join',
       skills: 'Angular | TypeScript | HTML | CSS | Firebase',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      descriptionKey: 'portfolio.join.description',
       linkProject: 'https://join-335.developerakademie.net/Join/index.html',
       linkGit: 'https://github.com/LarsMadproduction/Join',
     },
@@ -25,7 +26,7 @@ export class PortfolioSingleListComponent {
       image: 'medieval-hunt.png',
       name: 'Medieval Hunt',
       skills: 'JavaScript | HTML | CSS',
-      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help the magician collect the coins and make his way to the end. Watch your mana otherwise it will be difficult to defeat the boss.',
+      descriptionKey: 'portfolio.medieval_hunt.description',
       linkProject: 'https://lars-schumacher.developerakademie.net/medievalhunt/',
       linkGit: 'https://github.com/LarsMadproduction/Medieval-Hunt',
     },

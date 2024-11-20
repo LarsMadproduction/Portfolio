@@ -30,6 +30,14 @@
   "another_skill": "weiteren Fähigkeit",
   "learn_more_line1": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf,",
   "learn_more_line2": "mein bisheriges Wissen weiter auszubauen.",
-  "get_in_touch": "Kontakt"
+  "get_in_touch": "Kontakt",
+  "portfolio_explore": "Entdecken Sie hier eine Auswahl meiner Arbeiten – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+  "portfolio": {
+    "join": {
+      "description": "Ein vom Kanban-System inspirierter Task-Manager. Aufgaben erstellen und organisieren mit Drag-and-Drop-Funktionen, Benutzer und Kategorien zuweisen."
+    },
+    "medieval_hunt": {
+      "description": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf dem Magier, die Münzen zu sammeln und seinen Weg zum Ziel zu finden. Achte auf dein Mana, sonst wird es schwierig, den Boss zu besiegen."
+    }
+  }
 }
-

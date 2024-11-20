@@ -10,7 +10,7 @@
     <h2>{{ project.name }}</h2>
     <h3>{{ project.skills }}</h3>
     <p>
-      {{ project.description }}
+      {{ project.descriptionKey | translate }}
     </p>
     <div class="btns">
       <a class="test-btn" target="_blank" href="{{ project.linkProject }}">Live test</a>
