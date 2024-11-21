@@ -63,11 +63,11 @@ section {
 .language-switch {
   border: 2px solid white;
   border-radius: 10px;
-  min-width: 75px !important;
-  max-width: 75px !important;
+  width: 68px;
   margin-inline: 8px;
-  overflow: hidden;
   background-color: #9747ff8c;
+  display: flex;
+  justify-content: center;
 }
 
 .language-switch button {
@@ -81,6 +81,14 @@ section {
   font-weight: bold;
   text-decoration: underline;
   background-color: #70e61ce1;
+}
+
+.language-switch button.de-active {
+  border-radius: 7px 0px 0px 7px;
+}
+
+.language-switch button.en-active {
+  border-radius: 0px 7px 7px 0px;
 }
 
 @media (max-width: 768px) {

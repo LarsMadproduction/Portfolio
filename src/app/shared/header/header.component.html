@@ -2,21 +2,22 @@
   <section>
     <a (click)="backToMain()"><img src="portfolio-logo.png" alt="" /></a>
 
-    <div class="language-switch">
-      <button
-        (click)="switchLanguage('de')"
-        [class.active]="currentLang === 'de'"
-      >
-        DE
-      </button>
-      <button
-        (click)="switchLanguage('en')"
-        [class.active]="currentLang === 'en'"
-      >
-        EN
-      </button>
-    </div>
-
+    <span class="language-switch">
+        <button
+          (click)="switchLanguage('de')"
+          [class.active]="currentLang === 'de'"
+          [ngClass]="{'de-active': currentLang === 'de'}"
+        >
+          DE
+        </button>
+        <button
+          (click)="switchLanguage('en')"
+          [class.active]="currentLang === 'en'"
+          [ngClass]="{'en-active': currentLang === 'en'}"
+        >
+          EN
+        </button>
+    </span>
     <div>
       <a
         class="desktop-nav"
