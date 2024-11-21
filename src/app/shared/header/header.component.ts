@@ -43,4 +43,28 @@ export class HeaderComponent {
     this.router.navigateByUrl('/');
     window.scrollTo(0, 0);
   }
+
+  backToMainByNav(targetId?: string) {
+    if (this.router.url === '/') {
+      if (targetId) {
+        this.scrollToId(targetId);
+      }
+    } else {
+      this.router.navigateByUrl('/').then(() => {
+        if (targetId) {
+          setTimeout(() => {
+            this.scrollToId(targetId);
+          }, 125);
+          
+        }
+      });
+    }
+  }
+
+  scrollToId(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

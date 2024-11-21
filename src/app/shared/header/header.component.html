@@ -20,19 +20,19 @@
     <div>
       <a
         class="desktop-nav"
-        href="#about_me"
+        (click)="backToMainByNav('about_me')"
         [class.active]="activeSection === 'about_me'"
         >{{ "about_me" | translate }}</a
       >
       <a
         class="desktop-nav"
-        href="#my_skills"
+        (click)="backToMainByNav('my_skills')"
         [class.active]="activeSection === 'my_skills'"
         >{{ "skills" | translate }}</a
       >
       <a
         class="desktop-nav"
-        href="#portfolio"
+        (click)="backToMainByNav('portfolio')"
         [class.active]="
           activeSection === 'portfolio' || activeSection === 'portfolio_content'
         "

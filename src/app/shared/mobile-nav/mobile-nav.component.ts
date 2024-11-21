@@ -49,4 +49,28 @@ export class MobileNavComponent {
       this.isPrivacyPolicyRoute = this.router.url === '/privacy-policy';
     });
   }
+
+  backToMainByNav(targetId?: string) {
+    if (this.router.url === '/') {
+      if (targetId) {
+        this.scrollToId(targetId);
+      }
+    } else {
+      this.router.navigateByUrl('/').then(() => {
+        if (targetId) {
+          setTimeout(() => {
+            this.scrollToId(targetId);
+          }, 125);
+          
+        }
+      });
+    }
+  }
+
+  scrollToId(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
