@@ -1,0 +1,50 @@
+section {
+  height: calc(100vh - 110px);
+  width: 100vw;
+  max-width: 1920px;
+}
+
+.portrait-container {
+  height: calc(100vh - 110px);
+  //   width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait {
+  height: 100%;
+  z-index: -2;
+  position: absolute;
+  left: 250px;
+}
+
+.portrait-bg {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: -3;
+}
+
+@media (max-width: 1250px) {
+  .portrait-container {
+    display: flex;
+    justify-content: center;
+  }
+  .portrait {
+    left: unset;
+  }
+  .portrait-bg {
+    position: relative;
+
+  }
+}
+
+@media (min-width: 1921px) {
+  .portrait {
+    height: 70%;
+    top: 10%;
+  }
+  .portrait-bg {
+    height: 60%;
+  }
+}
