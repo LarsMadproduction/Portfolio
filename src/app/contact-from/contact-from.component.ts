@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -59,5 +60,12 @@ export class ContactFromComponent {
           complete: () => console.info('send post complete'),
         });
     }
+  }
+
+  constructor(private router: Router) {}
+
+  openPrivacyPolicy(){
+    this.router.navigateByUrl('/privacy-policy');
+    window.scrollTo(0, 0);
   }
 }

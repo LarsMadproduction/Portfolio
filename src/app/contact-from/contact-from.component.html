@@ -88,7 +88,7 @@
       />
       <span class="check-policy">
         {{ "privacy_policy_before" | translate }}
-        <a href="/privacy-policy"
+        <a (click)="openPrivacyPolicy()"
           ><b class="highlight"> {{ "privacy_policy" | translate }}</b></a
         >
         {{ "privacy_policy_after" | translate }}</span

@@ -14,11 +14,13 @@ import { TranslateModule } from '@ngx-translate/core';
 export class FooterComponent {
   constructor(private router: Router) {}
 
-  isLegalNoticeRoute = false;
+  openLegalNotice(){
+    this.router.navigateByUrl('/legal-notice');
+    window.scrollTo(0, 0);
+  }
 
-  ngOnInit(): void {
-    this.router.events.subscribe(() => {
-      this.isLegalNoticeRoute = this.router.url === '/legal-notice';
-    });
+  backToMain(){
+    this.router.navigateByUrl('/');
+    window.scrollTo(0, 0);
   }
 }

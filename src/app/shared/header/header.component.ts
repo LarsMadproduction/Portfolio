@@ -38,4 +38,9 @@ export class HeaderComponent {
     this.translate.use(lang);
     this.currentLang = lang;
   }
+
+  backToMain(){
+    this.router.navigateByUrl('/');
+    window.scrollTo(0, 0);
+  }
 }

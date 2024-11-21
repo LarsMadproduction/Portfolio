@@ -1,15 +1,10 @@
 <div class="bg-color">
   <section>
     <div class="footer-left-side">
-      <a href="#"><img src="portfolio-logo.png" alt="" /></a>
-      <a
-        *ngIf="!isLegalNoticeRoute"
-        class="legal-notice"
-        href="/legal-notice"
-        >{{ "legal_notice" | translate }}</a
-      >
+      <a (click)="backToMain()"><img src="portfolio-logo.png" alt="" /></a>
+      <span class="legal-notice" (click)="openLegalNotice()">{{ "legal_notice" | translate }}</span>
     </div>
-    <span>© Lars Schumacher 2024</span>
+    <span class="copyright">© Lars Schumacher 2024</span>
     <div class="footer-right-side">
       <a href="https://github.com/LarsMadproduction" target="_blank"
         ><img src="logos/git-hub-btn.png" alt=""

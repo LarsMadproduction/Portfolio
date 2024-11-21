@@ -16,9 +16,10 @@ section {
   align-items: center;
   height: 250px;
   padding-inline: 100px;
-  span {
-    font-size: 24px;
-  }
+}
+
+.copyright {
+  font-size: 24px;
 }
 
 .footer-left-side {
@@ -27,13 +28,14 @@ section {
   img {
     margin-top: 16px;
   }
-  a {
+  span {
     position: relative;
     margin-top: 8px;
   }
 }
 
 .legal-notice {
+  cursor: pointer;
   &:hover {
     &::after {
       content: "";
