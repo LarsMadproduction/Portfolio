@@ -7,7 +7,7 @@ section {
   justify-content: space-between;
   align-items: center;
   overflow-x: clip;
-  z-index: 10;
+  z-index: 500;
 }
 
 .info{
@@ -118,7 +118,6 @@ p {
     justify-content: space-between;
     align-items: center;
     padding-inline: 100px;
-    background-color: #141d2f;
     top: 0;
     left: 50%;
     transform: translateX(-50%);

@@ -29,13 +29,13 @@ app-atf-content {
   justify-content: center;
   position: absolute;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1330px) {
   .atf {
     img {
-      top: unset;
+      top: 5%;
     }
   }
 }
@@ -53,10 +53,6 @@ app-atf-content {
 @media (max-width: 1120px) and (orientation: landscape) {
   .atf {
     overflow: hidden;
-  }
-  .atf img {
-    top: unset;
-    width: 100vw;
   }
 }
 

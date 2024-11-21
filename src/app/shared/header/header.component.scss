@@ -1,4 +1,4 @@
-.bg-color{
+.bg-color {
   background-color: #141d2f;
   display: flex;
   justify-content: center;
@@ -61,7 +61,13 @@ section {
 }
 
 .language-switch {
-  width: 64px !important;
+  border: 2px solid white;
+  border-radius: 10px;
+  min-width: 75px !important;
+  max-width: 75px !important;
+  margin-inline: 8px;
+  overflow: hidden;
+  background-color: #9747ff8c;
 }
 
 .language-switch button {
@@ -74,6 +80,7 @@ section {
 .language-switch button.active {
   font-weight: bold;
   text-decoration: underline;
+  background-color: #70e61ce1;
 }
 
 @media (max-width: 768px) {
@@ -84,7 +91,7 @@ section {
     padding-inline: 16px;
   }
   .language-switch {
-    margin-left: 32px;
+    margin-left: 16px;
   }
 }
 

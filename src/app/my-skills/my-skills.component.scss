@@ -7,11 +7,12 @@ section {
   justify-content: space-between;
   align-items: flex-start;
   overflow-x: clip;
+  position: relative;
+  z-index: 500;
 }
 
 .bg-green-blur {
   position: absolute;
-  bottom: center;
   left: -450px;
 }
 
