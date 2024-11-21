@@ -3,21 +3,20 @@
     <a (click)="backToMain()"><img src="portfolio-logo.png" alt="" /></a>
 
     <span class="language-switch">
-        <button
-          (click)="switchLanguage('de')"
-          [class.active]="currentLang === 'de'"
-          [ngClass]="{'de-active': currentLang === 'de'}"
-        >
-          DE
-        </button>
-        <button
-          (click)="switchLanguage('en')"
-          [class.active]="currentLang === 'en'"
-          [ngClass]="{'en-active': currentLang === 'en'}"
-        >
-          EN
-        </button>
+      <button
+        (click)="switchLanguage('de')"
+        [class.active]="currentLang === 'de'"
+      >
+        DE
+      </button>|
+      <button
+        (click)="switchLanguage('en')"
+        [class.active]="currentLang === 'en'"
+      >
+        EN
+      </button>
     </span>
+
     <div>
       <a
         class="desktop-nav"
