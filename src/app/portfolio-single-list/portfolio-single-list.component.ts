@@ -17,7 +17,7 @@ export class PortfolioSingleListComponent {
     {
       image: 'join.png',
       name: 'Join',
-      skills: 'Angular | TypeScript | HTML | CSS | Firebase',
+      skills: 'JavaScript | HTML | CSS | Firebase',
       descriptionKey: 'portfolio.join.description',
       linkProject: 'https://join.lars-schumacher.com',
       linkGit: 'https://github.com/LarsMadproduction/Join',
