@@ -30,5 +30,13 @@ export class PortfolioSingleListComponent {
       linkProject: 'https://medieval-hunt.lars-schumacher.com',
       linkGit: 'https://github.com/LarsMadproduction/Medieval-Hunt',
     },
+    {
+      image: 'dabubble.png',
+      name: 'DABubble',
+      skills: 'Angular | TypeScript | SCSS | Firebase',
+      descriptionKey: 'portfolio.dabubble.description',
+      linkProject: 'https://dabubble.lars-schumacher.com',
+      linkGit: 'https://github.com/LarsMadproduction/DABubble',
+    },
   ];
 }

@@ -38,6 +38,9 @@
     },
     "medieval_hunt": {
       "description": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf dem Magier, die Münzen zu sammeln und seinen Weg zum Ziel zu finden. Achte auf dein Mana, sonst wird es schwierig, den Boss zu besiegen."
+    },
+    "dabubble": {
+      "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer leistungsstarken Kanalorganisation."
     }
   },
   "contact_h2": "Haben Sie ein Problem, das gelöst werden muss?",
