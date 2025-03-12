@@ -12,12 +12,14 @@ import { ContactComponent } from './contact/contact.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { TranslateService } from '@ngx-translate/core';
 import { PrivacyPoliceComponent } from './privacy-police/privacy-police.component';
+import { FirstViewComponent } from './first-view/first-view.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
+    FirstViewComponent,
     HeaderComponent,
     FooterComponent,
     AboveTheFoldComponent,
