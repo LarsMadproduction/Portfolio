@@ -17,6 +17,16 @@
   }
 }
 
+svg {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  fill: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
 .cube {
   position: relative;
   width: 400px;

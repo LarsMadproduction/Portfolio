@@ -1,5 +1,15 @@
 <div *ngIf="!isRemoved" id="cubeContainer" class="cube-container" [class.hidden]="isHidden" (click)="close()">
-    <div class="cube">
+  <svg width="300" height="60">
+    <defs>
+      <path id="curve" d="M 50,50 A 300,300 0 0,1 250,50" />
+    </defs>
+    <text width="300">
+      <textPath href="#curve" startOffset="50%" text-anchor="middle">
+        CLICK ME!
+      </textPath>
+    </text>
+  </svg>
+  <div class="cube">
       <div class="cube-section cube-front"><img src="/dabubble.png" alt=""></div>
       <div class="cube-section cube-back"><img src="/dabubble.png" alt=""></div>
       <div class="cube-section cube-left"><img src="/join.png" alt=""></div>
@@ -7,5 +17,4 @@
       <div class="cube-section cube-top"><img src="/medieval-hunt.png" alt=""></div>
       <div class="cube-section cube-bottom"><img src="/medieval-hunt.png" alt=""></div>
     </div>
-  </div>
-  
+  </div>  
