@@ -121,6 +121,7 @@ section {
     font-size: 24px;
     margin-top: 5%;
     box-shadow: 4px 4px 4px 0px #00000040;
+    transition: width 125ms ease-in-out, height 125ms ease-in-out, background-color 125ms ease-in-out;
     &:hover {
       background-color: #9747ff;
       height: 69px;
