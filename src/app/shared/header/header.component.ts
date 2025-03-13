@@ -17,7 +17,7 @@ export class HeaderComponent {
   currentLang: string;
 
   constructor(private router: Router, private translate: TranslateService) {
-    this.currentLang = this.translate.currentLang || 'en';
+    this.currentLang = this.translate.currentLang || 'de';
   }
   activeSection: string = '';
 

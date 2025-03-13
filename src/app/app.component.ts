@@ -42,8 +42,8 @@ export class AppComponent implements OnInit {
   constructor(private router: Router, private translate: TranslateService) {}
 
   ngOnInit(): void {
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
     this.router.events.subscribe(() => {
     this.isLegalNoticeRoute = this.router.url === '/legal-notice';
     this.isPrivacyPolicyRoute = this.router.url === '/privacy-policy';
