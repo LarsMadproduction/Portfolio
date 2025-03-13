@@ -9,7 +9,7 @@
   background-color: #141d2f;
   perspective: 1000px;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-
+  cursor: pointer;
   &.hidden {
     opacity: 0;
     transform: scale(3);
@@ -17,9 +17,27 @@
   }
 }
 
-svg {
+section {
+  position: relative;
+}
+
+.click-me {
+  width: 300px;
+  height: 60px;
   position: absolute;
-  top: 32px;
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  fill: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.exp-more {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  bottom: -220px;
   left: 50%;
   transform: translateX(-50%);
   fill: white;
@@ -32,7 +50,7 @@ svg {
   width: 400px;
   height: 400px;
   transform-style: preserve-3d;
-  animation: rotate-cube 10s infinite linear;
+  animation: rotate-cube 15s infinite linear;
 }
 
 .cube-section {

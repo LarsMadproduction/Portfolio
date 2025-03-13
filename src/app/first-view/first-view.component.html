@@ -1,20 +1,32 @@
 <div *ngIf="!isRemoved" id="cubeContainer" class="cube-container" [class.hidden]="isHidden" (click)="close()">
-  <svg width="300" height="60">
+  <section>
+  <svg class="click-me">
     <defs>
-      <path id="curve" d="M 50,50 A 300,300 0 0,1 250,50" />
+      <path id="curve_top" d="M 50,50 A 300,300 0 0,1 250,50" />
     </defs>
-    <text width="300">
-      <textPath href="#curve" startOffset="50%" text-anchor="middle">
+    <text>
+      <textPath href="#curve_top" startOffset="50%" text-anchor="middle">
         CLICK ME!
       </textPath>
     </text>
   </svg>
   <div class="cube">
-      <div class="cube-section cube-front"><img src="/dabubble.png" alt=""></div>
-      <div class="cube-section cube-back"><img src="/dabubble.png" alt=""></div>
-      <div class="cube-section cube-left"><img src="/join.png" alt=""></div>
-      <div class="cube-section cube-right"><img src="/join.png" alt=""></div>
-      <div class="cube-section cube-top"><img src="/medieval-hunt.png" alt=""></div>
-      <div class="cube-section cube-bottom"><img src="/medieval-hunt.png" alt=""></div>
-    </div>
-  </div>  
+    <div class="cube-section cube-front"><img src="/dabubble.png" alt=""></div>
+    <div class="cube-section cube-back"><img src="/dabubble.png" alt=""></div>
+    <div class="cube-section cube-left"><img src="/join.png" alt=""></div>
+    <div class="cube-section cube-right"><img src="/join.png" alt=""></div>
+    <div class="cube-section cube-top"><img src="/medieval-hunt.png" alt=""></div>
+    <div class="cube-section cube-bottom"><img src="/medieval-hunt.png" alt=""></div>
+  </div>
+  <svg class="exp-more">
+    <defs>
+      <path id="curve_bottom" d="M 0,50 A 300,300 0 0,0 300,50" />
+    </defs>
+    <text>
+      <textPath href="#curve_bottom" startOffset="50%" text-anchor="middle">
+        EXPLORE MORE!
+      </textPath>
+    </text>
+  </svg>
+</section>
+</div>
