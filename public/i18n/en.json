@@ -41,6 +41,9 @@
     },
     "dabubble": {
       "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    },
+    "management_tool": {
+      "description": "This desktop app is designed for processing course participants' data, assigning each participant to the appropriate course, and offering users/employees the ability to manage data and submit evaluations for selected projects. Among other things, invoices can be created and accommodation data can be managed. The user interface varies depending on user permissions, providing a structured overview for the required administrative level. Data uploads are managed by participants via the mobile app. This means that data management is completely digital from arrival to the end of the course/training, speeding it up and significantly reducing paperwork."
     }
   },
   "contact_h2": "Got a problem to solve?",
@@ -118,5 +121,5 @@
   "privacy_policy_h2_15": "Changes to This Privacy Policy",
   "privacy_policy_h2_15_text1": "The provider reserves the right to make changes to this privacy policy at any time by notifying users on this page and, where technically and legally possible, by sending a notification through the contact details provided by the provider. Users are therefore encouraged to regularly review this page and, in particular, check the date of the last update provided at the bottom of the page.",
   "privacy_policy_h2_15_text2": "If changes affect the use of data based on the user's consent, the provider will obtain a new consent from the user, where necessary.",
-  "privacy_policy_last_update": "Last updated: November 20, 2024"  
+  "privacy_policy_last_update": "Last updated: November 20, 2024"
 }

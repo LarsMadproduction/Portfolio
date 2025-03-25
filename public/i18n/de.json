@@ -41,6 +41,9 @@
     },
     "dabubble": {
       "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer leistungsstarken Kanalorganisation."
+    },
+    "management_tool": {
+      "description": "Diese Desktop-App ist zur Datenverarbeitung der Kurs Teilnehmer gedacht und teilt jeden Teilnehmer den richtigen Kurs zu und biete die Möglichkeit dem User/Mitarbeiter die Daten zu verwalten und Bewertungen zu gewählten Projekten zu hinterlegen. Unter anderem können Abrechnungen erstellt werden und daten zur Unterbringung verwaltet werden. Je nach User Berechtigung unterscheidet sich das Userinterface und bietet somit eine strukturierte Übersicht für die nötige Verwaltungsebene. Der Upload der Daten wird von den Teilnehmern über die Mobilapp verwaltet. Somit ist die Datenverwaltung von Ankunft bis Ende des Kurses/der Ausbildung vollständig digital verwaltet und beschleunigt diese sowie verringert den Papierkram immens."
     }
   },
   "contact_h2": "Haben Sie ein Problem, das gelöst werden muss?",
@@ -118,5 +121,5 @@
   "privacy_policy_h2_15": "Änderungen dieser Datenschutzerklärung",
   "privacy_policy_h2_15_text1": "Der Anbieter behält sich vor, jederzeit Änderungen an dieser Datenschutzerklärung vorzunehmen, indem Nutzer auf dieser Seite und gegebenenfalls über diese Anwendung und/oder - soweit technisch und rechtlich möglich – durch das Versenden einer Mitteilung über dem Anbieter vorliegende Kontaktdaten der Nutzer informiert werden. Nutzern wird daher nahegelegt, diese Seite regelmäßig aufzurufen und insbesondere das am Seitenende angegebene Datum der letzten Änderung zu prüfen.",
   "privacy_policy_h2_15_text2": "Soweit Änderungen eine auf der Einwilligung des Nutzers basierte Datennutzung betreffen, so wird der Anbieter - soweit erforderlich - eine neue Einwilligung einholen.",
-  "privacy_policy_last_update": "Letzte Aktualisierung: 20. November 2024"  
+  "privacy_policy_last_update": "Letzte Aktualisierung: 20. November 2024"
 }

@@ -13,7 +13,21 @@
       {{ project.descriptionKey | translate }}
     </p>
     <div class="btns">
-      <a class="test-btn" target="_blank" href="{{ project.linkProject }}">Live test</a>
+      <a
+        [ngClass]="{
+          'disabled-btn': isDisabled(project.linkProject),
+          'test-btn': !isDisabled(project.linkProject)
+        }"
+        [href]="
+          isDisabled(project.linkProject)
+            ? 'javascript:void(0);'
+            : project.linkProject
+        "
+        (click)="preventNavigation($event, project.linkProject)"
+        target="_blank"
+      >
+        Live test
+      </a>
       <a class="git-btn" target="_blank" href="{{ project.linkGit }}">Github</a>
     </div>
   </div>
